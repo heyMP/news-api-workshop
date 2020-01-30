@@ -12,7 +12,7 @@ async function main() {
   const apolloServer = new ApolloServer({
     typeDefs: gql`
       type Query {
-        news(tag: String, sortBy: String, from: String): [Article]
+        news(tag: String): [Article]
       }
       type Article {
         author: String
