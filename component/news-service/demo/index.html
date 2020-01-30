@@ -16,9 +16,9 @@
     import '../news-service.js';
     render(
       html`
-        <news-service endpoint="http://localhost:4000/graphql" tag="bitcoin">
-          some more light-dom
-        </news-service>
+        Latest News from Bitcoin
+        <br>
+        <news-service endpoint="http://localhost:4000/graphql" tag="bitcoin"></news-service>
       `,
       document.querySelector('#demo')
     );
