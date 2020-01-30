@@ -2,10 +2,10 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const { ApolloServer, gql } = require("apollo-server-express");
+const newsClient = require('./newsClient.js')
 
 async function main() {
   const app = express();
-
   app.use(cors());
   app.use(bodyParser.json());
 
