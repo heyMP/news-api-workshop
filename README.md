@@ -7,4 +7,4 @@ docker-compose up
 ```
 
 Web Component Demo: http://localhost:8000/demo/index.html
-GraphQL Endpoint: http://localhost4000/graphql
+GraphQL Endpoint: http://localhost:4000/graphql
