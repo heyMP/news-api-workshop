@@ -86,7 +86,7 @@ class NewsService extends LitElement {
 
   __endpointMethodChanged(endpoint, tag) {
     this.loading = true;
-    const _endpoint = `${endpoint}/graphql`
+    const _endpoint = `${endpoint.replace(/\/$/,"")}/graphql`;
     fetch(_endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

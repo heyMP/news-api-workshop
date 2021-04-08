@@ -1,1 +1,1 @@
-window.__env = {"NEWS_ENDPOINT":"http://craycray.traefik.me:4000"}
+window.__env = {"NEWS_ENDPOINT":"http://news.traefik.me:4000/"}
