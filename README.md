@@ -1,4 +1,4 @@
-# News API Application
+# News API Microservice
 
 ## Configure
 
