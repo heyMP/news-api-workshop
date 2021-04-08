@@ -6,7 +6,7 @@ import {
   LitElement,
   html,
   css
-} from "lit-element/lit-element.js";
+} from "https://unpkg.com/lit-element@2?module";
 // import "@lrnwebcomponents/elmsln-loading/elmsln-loading.js";
 /**
  * `glossary-term`
@@ -70,7 +70,7 @@ class NewsService extends LitElement {
 
   constructor() {
     super();
-    this.endpoint = "";
+    this.endpoint = window.NEWS_ENDPOINT || "http://news.traefik.me:4000";
     this.tag = "";
     this.items = [];
     this.loading = false;
@@ -86,7 +86,8 @@ class NewsService extends LitElement {
 
   __endpointMethodChanged(endpoint, tag) {
     this.loading = true;
-    fetch(endpoint, {
+    const _endpoint = `${endpoint}/graphql`
+    fetch(_endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

@@ -1,3 +1,3 @@
-import { NewsService } from './src/NewsService.js';
+import { NewsService } from './NewsService.js';
 
 window.customElements.define('news-service', NewsService);

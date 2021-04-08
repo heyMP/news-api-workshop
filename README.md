@@ -14,5 +14,5 @@ Now start Docker Compose.
 docker-compose up
 ```
 
-Web Component Demo: http://localhost:8000/demo/index.html
-GraphQL Endpoint: http://localhost:4000/graphql
+Web Component Demo: http://news.traefik.me
+GraphQL Endpoint: http://news.traefik.me:4000/graphql
