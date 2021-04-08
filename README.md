@@ -1,4 +1,4 @@
-# byu-news-api-workshop
+# News API Microservice
 
 ## Configure
 
