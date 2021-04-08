@@ -2,13 +2,13 @@ version: "3"
 services:
   server:
     build: ./server
-    ports: 
+    ports:
       - 4000:4000
     volumes:
       - ./server:/home/node/app
       - /home/node/app/node_modules
     env_file:
-      - .env
+      - dot.env
 
   component:
     build: ./component/news-service
@@ -17,4 +17,4 @@ services:
     ports:
       - 80:80
     env_file:
-      - .env
+      - dot.env

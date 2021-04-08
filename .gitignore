@@ -1,2 +1,4 @@
 .env
 node_modules
+# because of play with docker :(
+dot.env

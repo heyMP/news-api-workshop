@@ -70,7 +70,7 @@ class NewsService extends LitElement {
 
   constructor() {
     super();
-    this.endpoint = window.NEWS_ENDPOINT || "http://news.traefik.me:4000";
+    this.endpoint = window.__env.NEWS_ENDPOINT || "http://news.traefik.me:4000";
     this.tag = "";
     this.items = [];
     this.loading = false;
